@@ -37,18 +37,18 @@ describe Array do
     end
 
     it 'is return 2' do
-      a = {0=>1, 1=>2, 2=>3}
-      Frog.crossing(3, a).should eq(2)
+      h = {0=>1, 1=>2, 2=>3}
+      Frog.crossing(3, h).should eq(2)
     end
 
-    it 'is return 4' do
-      a = {0=>1, 1=>24, 2=>3, 3=>2, 4=>3}
-      Frog.crossing(3, a).should eq(3)
+    it 'is return 3' do
+      h = {0=>1, 1=>24, 2=>3, 3=>2, 4=>3}
+      Frog.crossing(3, h).should eq(3)
     end
 
     it 'x is not match' do
-      a = {0=>1, 1=>2, 2=>4, 3=>5}
-      Frog.crossing(3, a).should eq(-1)
+      h = {0=>1, 1=>2, 2=>4, 3=>5}
+      Frog.crossing(3, h).should eq(-1)
     end
     
     it 'is return -1' do

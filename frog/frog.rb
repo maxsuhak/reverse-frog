@@ -1,3 +1,4 @@
+# use hash instead of array
 class Frog
     def self.crossing(leafs_num, hash)
         raise "must be hash" unless hash.is_a?(Hash)
